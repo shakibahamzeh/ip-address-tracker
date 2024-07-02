@@ -1,3 +1,4 @@
+@import 'leaflet/dist/leaflet.css';
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -28,11 +29,12 @@ body {
 
 header{
 	background: url('/images/pattern-bg-desktop.png') no-repeat;
-	height: 400px;
+	height: 30vh;
 	background-size: cover;
 	width: 100vw;
 	text-align: center;
 	padding-top: 60px;
+	position: relative;
 }
 h1{
 	color: #fff;
@@ -70,4 +72,27 @@ input{
 }
 svg{
 	color: #fff;
+}
+
+.infoContainer{
+	min-width: 700px;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 16px;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	left: 0;
+	height: 200px;
+	padding: 50px 50px;
+	z-index: 1000;
+}
+
+.mapContainer{
+	height: 70vh;
+	width: 100%;
 }
