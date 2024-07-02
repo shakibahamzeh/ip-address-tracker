@@ -3,7 +3,7 @@ import React from 'react';
 import "./input.css"
 
 const Input = ({
-  type = 'text',
+  type,
   placeholder,
   value,
   onChange,
